@@ -1,6 +1,7 @@
 [![Docker pulls](https://img.shields.io/docker/pulls/dlanguage/dmd.svg)](https://hub.docker.com/r/dlanguage/dmd/)
 [![Docker Build](https://img.shields.io/docker/automated/dlanguage/dmd.svg)](https://hub.docker.com/r/dlanguage/dmd/)
 [![Latest Tag](https://img.shields.io/github/tag/lindt/docker-dmd.svg)](https://hub.docker.com/r/dlanguage/dmd/)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flindt%2Fdocker-dmd.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flindt%2Fdocker-dmd?ref=badge_shield)
 
 # docker-dmd
 
@@ -48,3 +49,7 @@ If you are too lazy to create a file, you can compile directly from stdin:
 ```sh
 echo 'void main(){import std.stdio; writeln("Hello World");}' | docker run --rm -i -v $(pwd):/src dlanguage/dmd dmd -run -
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flindt%2Fdocker-dmd.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Flindt%2Fdocker-dmd?ref=badge_large)
